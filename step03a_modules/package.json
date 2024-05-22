@@ -1,15 +1,13 @@
 {
-  "name": "step00_helloworld",
+  "name": "step03a_modules",
   "version": "1.0.0",
-  "description": "",
+  "description": "Modules in TypeScript\r Modules",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^20.12.12"
-  }
+  "license": "ISC"
 }
