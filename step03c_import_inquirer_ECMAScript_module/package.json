@@ -1,0 +1,20 @@
+{
+  "name": "step03c_import_inquirer_ecmascript_module",
+  "version": "1.0.0",
+  "description": "The latest version (9+) of [Inquirer](https://github.com/SBoudrias/Inquirer.js/) has start using Native ECMA Script Packages. In most of our projects and assignment we will use this package.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.12.12"
+  },
+  "dependencies": {
+    "inquirer": "^9.2.22"
+  }
+}
