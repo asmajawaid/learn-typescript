@@ -82,3 +82,33 @@ Examples of JSON
 1.package.json
 2.tsconfig.json
 Reference Twitter Post on JSON
+
+/////////////////////////////////////////////////////////////
+
+Parsing and Stringification: In TypeScript, you can parse JSON strings into JavaScript objects using JSON.parse() and convert JavaScript objects into JSON strings using JSON.stringify().
+
+Example of parsing JSON:
+
+let jsonString = '{"name": "John", "age": 30}';
+let parsedObject = JSON.parse(jsonString);
+console.log(parsedObject.name); // Outputs: John
+
+Example of stringifying an object:
+
+let person = { name: "Jane", age: 25 };
+let jsonString = JSON.stringify(person);
+console.log(jsonString); // Outputs: {"name":"Jane","age":25}
+
+Type Safety: TypeScript provides type safety for JSON operations through type annotations and interfaces. You can define TypeScript interfaces to represent the structure of JSON objects, allowing for type-checking and IntelliSense support in IDEs.
+
+Example:
+
+interface Person {
+    name: string;
+    age: number;
+}
+
+let jsonString = '{"name": "Alice", "age": 28}';
+let parsedObject: Person = JSON.parse(jsonString);
+console.log(parsedObject.name); // Type-checked access to 'name'
+

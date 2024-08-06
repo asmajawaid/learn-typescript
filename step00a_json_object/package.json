@@ -1,0 +1,12 @@
+{
+  "name": "step00a_json_object",
+  "version": "1.0.0",
+  "description": "JSON ( Javascript Object Notation )\r 1.JSON stands for Javascript Object Notation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -9,6 +9,30 @@ console.log(myName);
 
 // myName =undefined; //error
 // myName = 6;          //error
+// ===========================================
+
+type State = "loading"|"success"|"error";
+function handelState (state:State){
+    switch (state){
+         case "loading":
+            console.log("Loading...");
+            break;
+        case "success":
+            console.log("success!");
+            break;
+        case "error":
+            console.log("error...");
+            break;
+    }
+}
+handelState("loading")
+// ------------------------------------------------------------
+type Eventtype = "Click"| "Mouseover"|"Mouseout"
+function handelEvent(event:Eventtype){
+    console.log(`Event: ${event}`);
+}
+handelEvent("Click")
+
 
 //===============NARROW TYPE===============
 
@@ -25,7 +49,7 @@ console.log(myAge.toLowerCase()); // ok common to both types
 
 // ======================================================================
 //here math.random generate number randomley from 0 to 1 if No less then 0.6 its print khan
-let newAge = Math.random() > 0.6 ? "khan" : 60;
+let newAge = Math.random() > 0.6 ? "Asma khan" : 60;
 
 // newAge.toLwerCase() //dirct method access nahe hoga
 
@@ -96,7 +120,18 @@ let mycar : car ={
     cartype:"corolla",
 }
 console.log(mycar);
-
+// ----------------------------------------------------------------
+type Shape ="circle"|"Rectangle"|"Squire";
+type Color = "red"| "green"| "blue"
+type Drawing = {
+    shape: Shape,
+    color: Color,
+    size: number,
+}
+function draw(drawing:Drawing){
+    console.log(`Drawing a ${drawing.shape} ${drawing.color} of size ${drawing.size}`);
+}
+draw({shape:"circle",color:"blue",size:50})
 
 // ========================TYPE INTERFACES==========================
 
@@ -151,3 +186,5 @@ let c : Customer ={
       phone:125455,
 };
 console.log(c.name);
+
+// see readME file for more details

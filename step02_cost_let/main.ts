@@ -13,3 +13,4 @@ if (true) {
     let z = "123";
 };
 console.log("let :" + z ); // error z is not define in this scop
+// comile time error
